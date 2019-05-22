@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.28307.572
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PhoneStore", "PhoneStore\PhoneStore.csproj", "{30CFD8A4-2CA4-46D1-843F-6B244BBEE4CD}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{30CFD8A4-2CA4-46D1-843F-6B244BBEE4CD}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{30CFD8A4-2CA4-46D1-843F-6B244BBEE4CD}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{30CFD8A4-2CA4-46D1-843F-6B244BBEE4CD}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{30CFD8A4-2CA4-46D1-843F-6B244BBEE4CD}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {2BCD4F5D-D6BB-4D94-8D4F-8AEC262B478C}
+	EndGlobalSection
+EndGlobal
