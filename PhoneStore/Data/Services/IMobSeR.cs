@@ -9,7 +9,7 @@ namespace PhoneStore.Data.Services
     public interface IMobSeR
     {
         IEnumerable<Phone> Phones { get; }
-        IEnumerable<Phone> PrefPhones { get; set; }
+        IEnumerable<Phone> PrefPhones { get; }
         Phone GetPhoneById(int phoneid);
         void AddPhone(Phone phone);
         void DeletePhone(Phone phone);

@@ -46,11 +46,8 @@ namespace PhoneStore.Data.Implement
 
             }
         }
-        public IEnumerable<Phone> PrefPhones
-        {
-            get => throw new NotImplementedException();
-            set => throw new NotImplementedException();
-        }
+
+        public IEnumerable<Phone> PrefPhones => throw new NotImplementedException();
 
         public void AddPhone(Phone phone)
         {
