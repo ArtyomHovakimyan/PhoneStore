@@ -4,6 +4,7 @@ using System.Linq;
 using System.Threading.Tasks;
 using Microsoft.AspNetCore.Mvc;
 using PhoneStore.Data.Services;
+using PhoneStore.ViewModels;
 
 namespace PhoneStore.Controllers
 {
@@ -11,10 +12,18 @@ namespace PhoneStore.Controllers
     {
         private readonly ICompanySeR _company;
         private readonly IMobSeR _mob;
+        public PhoneController(ICompanySeR companySeR,IMobSeR mobSeR)
+        {
+            _company = companySeR;
+            _mob = mobSeR;
+        }
         public IActionResult List()
         {
-            var phones = _mob.Phones;
-            return View(phones);
+            ViewBag.Name = "Change this text";
+            PhoneListViewModel vm = new PhoneListViewModel();
+            vm.Phones = _mob.Phones;
+            vm.CurrentCompany = "Samsung";
+            return View(vm);
         }
     }
 }

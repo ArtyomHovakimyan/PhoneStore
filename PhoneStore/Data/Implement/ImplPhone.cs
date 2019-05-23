@@ -23,10 +23,10 @@ namespace PhoneStore.Data.Implement
                     Description = "Random Descr",
                     FullDescription = "Descr",
                     Title = "GalaxyS",
-                    ImagesUrl = "http://www.mobilestore.am/uploads/media/products/0001/02/thumb_1580_products_list.png",
+                    ImagesUrl = "iphone_4.jpg",
                     InS = true,
                     IsPrefPhone = true,
-                    ImageUrl = "http://www.mobilestore.am/uploads/media/products/0001/02/thumb_1580_products_list.png"
+                    ImageUrl = "iphone_4.jpg"
 
                 },
                 new Phone
@@ -36,10 +36,10 @@ namespace PhoneStore.Data.Implement
                     Description = "Random Descr",
                     FullDescription = "Descr",
                     Title = "Galaxy",
-                    ImagesUrl = "http://www.mobilestore.am/uploads/media/products/0001/02/thumb_1580_products_list.png",
+                    ImagesUrl = "iphone_2.jpg",
                     InS = true,
                     IsPrefPhone = true,
-                    ImageUrl = "http://www.mobilestore.am/uploads/media/products/0001/02/thumb_1580_products_list.png"
+                    ImageUrl = "iphone_2.jpg"
 
                 }
             };

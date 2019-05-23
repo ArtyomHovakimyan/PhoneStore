@@ -7,9 +7,11 @@ using Microsoft.AspNetCore.Hosting;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.HttpsPolicy;
 using Microsoft.AspNetCore.Mvc;
+using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using PhoneStore.Data.Implement;
+using PhoneStore.Data.Models;
 using PhoneStore.Data.Services;
 
 namespace PhoneStore
@@ -36,6 +38,8 @@ namespace PhoneStore
 
             services.AddMvc().SetCompatibilityVersion(CompatibilityVersion.Version_2_1);
 
+            string connection = Configuration.GetConnectionString("DefaultConnection");
+            services.AddDbContext<PhoneContext>(options => options.UseSqlServer(connection));
             services.AddTransient<IMobSeR, ImplPhone>();
             services.AddTransient<ICompanySeR, ImplCompany>();
 
