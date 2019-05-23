@@ -8,7 +8,7 @@ namespace PhoneStore.Data.Services
 {
     public interface IMobSeR
     {
-        IEnumerable<Phone> Phones { get; set; }
+        IEnumerable<Phone> Phones { get; }
         IEnumerable<Phone> PrefPhones { get; set; }
         Phone GetPhoneById(int phoneid);
         void AddPhone(Phone phone);

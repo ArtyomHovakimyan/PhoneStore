@@ -9,6 +9,8 @@ using Microsoft.AspNetCore.HttpsPolicy;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
+using PhoneStore.Data.Implement;
+using PhoneStore.Data.Services;
 
 namespace PhoneStore
 {
@@ -31,6 +33,7 @@ namespace PhoneStore
                 options.MinimumSameSitePolicy = SameSiteMode.None;
             });
 
+            services.AddTransient(IMobSeR, ImplPhone);
 
             services.AddMvc().SetCompatibilityVersion(CompatibilityVersion.Version_2_1);
         }
